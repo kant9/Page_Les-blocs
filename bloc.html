@@ -1,37 +1,141 @@
 <!DOCTYPE html>
 <html>
+
+
+
+
+
+  <ul>
+    <li><a href="#" id="x"><i class="fa fa-mobile" aria-hidden="true"></i>portable & Tablettes</a></li>
+    <li><a href="#" id="x"><i class="fa fa-home" aria-hidden="true"></i>home</a></li>
+    <li><a href="#" id="x"><i class="fa fa-gamepad" aria-hidden="true"></i>Outils jeux</a></li>
+    <li><a href="#" id="x"><i class="fa fa-gamepad" aria-hidden="true"></i>Sport</a></li>
+    <li><a href="#" id="x"><i class="fa fa-camera" aria-hidden="true"></i>electronique</a></li>
+    <li><a href="#" id="x"><i class="fa fa-user-circle-o" aria-hidden="true"></i>User</a></li>
+    <li><a href="#" id="x"><i class="fa fa-desktop" aria-hidden="true"></i>Ordinateur</a></li>           
+    <li><a href="#" id="x"><i class="fa fa-building" aria-hidden="true"></i> boutique</a></li>
+    
+   
+
+    
+     <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Portable</a></li>
+     <li><a href="#"><i class="fa fa-cutlery" aria-hidden="true"></i>food</a></li>
+    <li><a href="#"><i class="fa fa-deaf" aria-hidden="true"></i> deals</a></li>
+    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Aide</a></li>
+    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Panier</a></li>
+    <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>Etoile</a></li>
+    <li><a href="#"><i class="fa fa-snowflake-o" aria-hidden="true"></i>froid</a></li>
+    <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i>recherche</a></li>
+    <i class="fa fa-cogs" aria-hidden="true"></i> logistic
+    <i class="fa fa-sort-desc" aria-hidden="true"></i>chevron bas
+    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>trois points de suspension
+    --/>
+
+
+                       <img src="mesImages/image1Milieu.gif" alt="imag1">
+                       <img src="mesImages/imag2Milieu.jpg" alt="imag1">
+                       <img src="mesImages/image3Milieu.jpg" alt="imag1">
+                       <i class="fa fa-sort-desc" aria-hidden="true"></i>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <head>
         <meta charset="utf8">
-        <link rel="stylesheet" href="samaCss.css">
+        <link rel="stylesheet" href="pcsbi.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+        crossorigin="anonymous"/>
+        <script src="jscpt.js"></script>
 
     </head>
     <body>
         <header class="hder">
-            <img class="imge" src="imahg.png">
+            <img class="imag" src="simplon.png">
         </header>
-        <div class="contener">
+        <div id="contener">
             <h1 class="tex">Mon Premier TP: Cheikh Diouf</h1>
            <div class="row">
-                <div class="x1">
-                  <p class="blc"><strong>bloc1</strong></p>
+                <div id="x1">
+                  <p id="blc1"><strong>bloc1</strong></p>
                  </div>
 
-                <div class="x1">
-                  <p class="blc"><strong>bloc2</strong></p>
+                <div id="x2">
+                  <p id="blc2"><strong>bloc2</strong></p>
                 </div>
 
            </div>
 
            <div class="row">
-             <div class="x1">
-              <p class="blc"> <strong>bloc3</strong> </p>
-             </div>
+               <div id="x3">
+                  <p id="blc3"> <strong>bloc3</strong> </p>
+               </div>
 
-             <div class="x1">
-              <p class="blc"><strong>bloc4</strong></p>
-             </div>
+               <div id="x4">
+                  <p id="blc4"><strong>bloc4</strong></p>
+               </div>
 
             </div>
+            <div class="bout">
+              <button onclick="Mafonction();" id="btn">click ici</button>
+            </div>
+            <div class="envlop">
+                 <div class="formulaire">
+                    <h1>Formulaire</h1>
+                    <form action="" method="" name="monForm">
+                       <label for="fname">Nom et Prénom</label>
+                       <input type="text" id="fname" name="firstname" placeholder=" votre nom et prénom">
+
+                       <label for="datnaiss">Age</label>
+                       <input type="number" id="datnaiss" name="maDate" placeholder="Votre age">
+                  
+                       <label for="tele">Téléphone</label>
+                       <input type="number" id="tel" name="tel" placeholder="votre email">
+
+                       <label for="emailAddress">Email</label>
+                       <input type="email" id="emailAddress" name="email" placeholder="votre email">
+
+                       <label for="subject">Message</label>
+                       <textarea id="subject" name="MonMess" placeholder="votre message" style="height:100px"></textarea>
+
+                       <input type="button" onclick="formulaire()" value="Envoyer" >
+                    </form>
+                 </div>
+                 <div class="sectAffichage">
+                  <h1>Données du formulaire</h1>
+                  <p class="p">Monsieur/Madame<p id="Np">nom</p></p>
+                  <p class="p">Agé(e) de <p id="Dn"></p>ans </p>
+                  <p class="p">Propriétaire du numéro:<p id="num"></p></p>
+                  <p class="p">Email:<p id="Em"></p></p>
+                  <p class="p">a donné ce message:<p id="Mess"></p></p>
+                 </div>
+            </div>
         </div>
+       
+        <footer>
+            <div class="para">
+              <img src="bLog.png">
+              <p>copyrights/P2_simplon2022</p>
+            </div>
+            <div class="reseaux">
+              <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+              <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+        </footer>
     </body>
 </html>
